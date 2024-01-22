@@ -1,0 +1,235 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* .navigation-bar {
+    position: relative;
+    z-index: 99;
+
+} */
+
+.navbar.scrolled {
+    /* margin-top: -22px; */
+    background-color: #fff !important;
+    /* Change to your desired background color */
+    /* color: #fff; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a subtle box shadow */
+    transition: 0.2s;
+}
+
+.navbar.scrolled .nav-link,
+.navbar-brand {
+    color: #000 !important;
+    /* Change to your desired text color */
+}
+
+.sac {
+    line-height: 20px;
+}
+
+.back-text {
+    background-color: #f5ebdf;
+}
+
+.upper-head {
+    /* position: sticky;
+    z-index: 999; */
+    text-align: center;
+    background: #f5ebdf;
+}
+
+.upper-head p {
+    font-size: xx-small;
+}
+
+.font-1 {
+    font-family: 'Cinzel', serif !important;
+    font-weight: 100;
+}
+
+.font-2 {
+    font-family: 'Noto Sans JP', sans-serif !important;
+}
+
+.content-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.product-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.product-card .img img {
+    height: 637px;
+}
+
+.product-card-box{
+    width: 313px;
+    overflow: hidden;
+}
+
+.img {
+    height: 441px;
+    overflow: hidden;
+}
+
+.img-product {
+    overflow: hidden;
+    position: relative;
+
+}
+    /* Apply styling to the container */
+    .card-container {
+        position: relative;
+        width: 313px; /* Set the width of the card */
+        height: auto; /* Allow the height to adjust based on content */
+        overflow: hidden; /* Ensure that any content overflowing the container is hidden */
+        cursor: pointer; /* Change cursor to pointer on hover to indicate interactivity */
+      }
+  
+      /* Apply styling to the images */
+      .card-container img {
+        width: 100%; /* Make the image fill the entire width of the container */
+        height: auto; /* Allow the height to adjust based on the width */
+        transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect to the opacity property */
+      }
+      /* Additional styling for text content */
+    .text-content {
+        text-align: center;
+        margin-top: 10px;
+      }
+  
+  
+      /* Hide the second image initially */
+      .card-container img:nth-child(2) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+  
+      /* Define the hover effect */
+      .card-container:hover img:first-child {
+        opacity: 0; /* Hide the first image on hover */
+      }
+  
+      .card-container:hover img:nth-child(2) {
+        opacity: 1; /* Show the second image on hover */
+      }
+  
+.add-to-cart {
+    position: absolute;
+    bottom: 0;
+    z-index: 990000;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 1s;
+    display: none;
+    bottom: 14px;
+    transition: 1s;
+}
+
+.img-product:hover .add-to-cart{
+    display: block;  
+}
+.img-product:hover img{
+    z-index: 1;
+}
+.img-product img{
+    /* transition: 1s; */
+    transition: transform 0.8s ease-in-out;
+}
+
+.text {
+    position: absolute;
+    bottom: 0;
+    z-index: 9999;
+}
+.video{
+    height: 100vh; /* Set the height of the container to 100% of the viewport height */
+      overflow: hidden; 
+      margin-bottom: 90px;
+}
+.video video{
+    width: 100%; /* Make the image fill the entire width of the container */
+    height: 100%; /* Make the image fill the entire height of the container */
+    object-fit: cover;
+}
+.banner-2-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.media-text {
+    position: relative;
+}
+
+.category-img {
+    height: 410px;
+    overflow: hidden;
+    position: relative;
+}
+
+.category-img img {
+    position: absolute;
+    top: -327px;
+    left: -18px;
+}
+
+.drop-down {
+    display: none;
+}
+
+.drop a:hover .drop-down {
+    display: block;
+}
+
+.discreet {
+    border: 1px solid;
+    border-top: none;
+    text-align: center;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    position: relative;
+    background: #cedfdc;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.img-div {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.circle-text a {
+    font-size: large;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+}
