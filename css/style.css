@@ -74,7 +74,7 @@ body {
     height: 637px;
 }
 
-.product-card-box{
+.product-card-box {
     width: 313px;
     overflow: hidden;
 }
@@ -89,45 +89,97 @@ body {
     position: relative;
 
 }
-    /* Apply styling to the container */
-    .card-container {
-        position: relative;
-        width: 313px; /* Set the width of the card */
-        height: auto; /* Allow the height to adjust based on content */
-        overflow: hidden; /* Ensure that any content overflowing the container is hidden */
-        cursor: pointer; /* Change cursor to pointer on hover to indicate interactivity */
-      }
-  
-      /* Apply styling to the images */
-      .card-container img {
-        width: 100%; /* Make the image fill the entire width of the container */
-        height: auto; /* Allow the height to adjust based on the width */
-        transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect to the opacity property */
-      }
-      /* Additional styling for text content */
-    .text-content {
-        text-align: center;
-        margin-top: 10px;
-      }
-  
-  
-      /* Hide the second image initially */
-      .card-container img:nth-child(2) {
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-      }
-  
-      /* Define the hover effect */
-      .card-container:hover img:first-child {
-        opacity: 0; /* Hide the first image on hover */
-      }
-  
-      .card-container:hover img:nth-child(2) {
-        opacity: 1; /* Show the second image on hover */
-      }
-  
+  /* Custom styles */
+  .has-megamenu:hover .megamenu {
+    display: block;
+}
+ /* Remove the toggle button styles */
+ .has-megamenu .dropdown-toggle::after {
+    display: none;
+}
+.dropdown-menu.megamenu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    margin-top: 0; /* Optional: Adjust the margin based on your design */
+}
+.navbar .megamenu{ padding: 1rem; }
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+
+  .navbar .has-megamenu{position:static!important;}
+  .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ mobile view ============ */
+@media(max-width: 991px){
+  .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+    overflow-y: auto;
+      max-height: 90vh;
+      margin-top:10px;
+  }
+}
+/* ============ mobile view .end// ============ */
+
+/* Apply styling to the container */
+.card-container {
+    position: relative;
+    width: 313px;
+    /* Set the width of the card */
+    height: auto;
+    /* Allow the height to adjust based on content */
+    overflow: hidden;
+    /* Ensure that any content overflowing the container is hidden */
+    cursor: pointer;
+    /* Change cursor to pointer on hover to indicate interactivity */
+}
+
+/* Apply styling to the images */
+.card-container img {
+    width: 100%;
+    /* Make the image fill the entire width of the container */
+    border-radius: 37px;
+    height: auto;
+    /* Allow the height to adjust based on the width */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    /* Add a smooth transition effect to the transform and opacity properties */
+}
+.card-container{
+    border-radius: 37px;
+}
+/* Additional styling for text content */
+.text-content {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Hide the second image initially */
+.card-container img:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(0.8); /* Initial scale, adjust as needed */
+}
+
+/* Define the hover effect */
+.card-container:hover img:first-child {
+    opacity: 0;
+    transform: scale(0.8); /* Scale down on hover, adjust as needed */
+}
+
+.card-container:hover img:nth-child(2) {
+    opacity: 1;
+    transform: scale(1.05); /* Scale up on hover, adjust as needed */
+}
+
+
+
 .add-to-cart {
     position: absolute;
     bottom: 0;
@@ -140,13 +192,15 @@ body {
     transition: 1s;
 }
 
-.img-product:hover .add-to-cart{
-    display: block;  
+.img-product:hover .add-to-cart {
+    display: block;
 }
-.img-product:hover img{
+
+.img-product:hover img {
     z-index: 1;
 }
-.img-product img{
+
+.img-product img {
     /* transition: 1s; */
     transition: transform 0.8s ease-in-out;
 }
@@ -156,16 +210,22 @@ body {
     bottom: 0;
     z-index: 9999;
 }
-.video{
-    height: 100vh; /* Set the height of the container to 100% of the viewport height */
-      overflow: hidden; 
-      margin-bottom: 90px;
+
+.video {
+    height: 100vh;
+    /* Set the height of the container to 100% of the viewport height */
+    overflow: hidden;
+    margin-bottom: 90px;
 }
-.video video{
-    width: 100%; /* Make the image fill the entire width of the container */
-    height: 100%; /* Make the image fill the entire height of the container */
+
+.video video {
+    width: 100%;
+    /* Make the image fill the entire width of the container */
+    height: 100%;
+    /* Make the image fill the entire height of the container */
     object-fit: cover;
 }
+
 .banner-2-text {
     top: 50%;
     left: 50%;
@@ -204,8 +264,13 @@ body {
 }
 
 .discreet {
-    border: 1px solid;
+    border: 1px solid #cedfdc;
     border-top: none;
+    text-align: center;
+}
+.discreet-2 {
+    border: 1px solid #cedfdc;
+    /* border-top: none; */
     text-align: center;
 }
 
