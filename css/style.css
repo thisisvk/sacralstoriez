@@ -232,6 +232,23 @@ body {
     transform: translate(-50%, -50%);
     position: absolute;
 }
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background: rgba(0, 0, 0, 0.7); Adjust the background color and transparency */
+    color: #fff; /* Adjust the text color */
+    padding: 10px; /* Adjust the padding as needed */
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
 
 .product {
     display: flex;
@@ -265,11 +282,15 @@ body {
 .font-sz{
     font-size: 18px;
 }
+.category-img {
+    position: relative;
+}
+
 .discreet-2 {
     border: 1px solid #cedfdc;
     /* border-top: none; */
     text-align: center;
-    padding: 57px 0px;
+    padding: 100px 0px;
 }
 
 .circle {
