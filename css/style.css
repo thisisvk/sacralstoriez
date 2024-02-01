@@ -70,9 +70,7 @@ body {
     justify-content: space-evenly;
 }
 
-.product-card .img img {
-    height: 637px;
-}
+
 
 .product-card-box {
     width: 313px;
@@ -262,16 +260,14 @@ body {
 .drop a:hover .drop-down {
     display: block;
 }
-
-.discreet {
-    border: 1px solid #cedfdc;
-    border-top: none;
-    text-align: center;
+.font-sz{
+    font-size: 18px;
 }
 .discreet-2 {
     border: 1px solid #cedfdc;
     /* border-top: none; */
     text-align: center;
+    padding: 57px 0px;
 }
 
 .circle {
