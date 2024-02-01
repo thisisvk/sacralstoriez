@@ -11,7 +11,9 @@ body {
     z-index: 99;
 
 } */
-
+.font-sz1{
+    font-size: 44px;
+}
 .navbar.scrolled {
     /* margin-top: -22px; */
     background-color: #fff !important;
@@ -23,7 +25,7 @@ body {
 }
 
 .navbar.scrolled .nav-link,
-.navbar-brand {
+.navbar.scrolled .navbar-brand {
     color: #000 !important;
     /* Change to your desired text color */
 }
@@ -294,13 +296,13 @@ body {
 }
 
 .circle {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: 100%;
     position: relative;
-    background: #cedfdc;
-    transform: translate(-50%, -50%);
-    top: 50%;
+    background: black;
+    transform: translate(-50%, -35%);
+    top: 35%;
     left: 50%;
 }
 
