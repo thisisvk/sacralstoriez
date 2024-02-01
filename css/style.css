@@ -137,11 +137,7 @@ body {
     /* Change cursor to pointer on hover to indicate interactivity */
 
 }
-.shadow{
-    -webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.23);
-    -moz-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.23);
-    box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.23);
-}
+
 
 /* Apply styling to the images */
 .card-container img {
