@@ -1,3 +1,383 @@
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* .navigation-bar {
+        position: relative;
+        z-index: 99;
+
+    } */
+    .font-sz1{
+        font-size: 44px;
+    }
+    .navbar.scrolled {
+        /* margin-top: -22px; */
+        background-color: #fff !important;
+        /* Change to your desired background color */
+        /* color: #fff; */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* Optional: Add a subtle box shadow */
+        transition: 0.2s;
+    }
+
+    .navbar.scrolled .nav-link,
+    .navbar.scrolled .navbar-brand {
+        color: #000 !important;
+        /* Change to your desired text color */
+    }
+
+    .sac {
+        line-height: 20px;
+    }
+
+    .back-text {
+        background-color: #f5ebdf;
+    }
+
+    .upper-head {
+        /* position: sticky;
+        z-index: 999; */
+        text-align: center;
+        background: #f5ebdf;
+    }
+
+    .upper-head p {
+        font-size: xx-small;
+    }
+
+    .font-1 {
+        font-family: 'Cinzel', serif !important;
+        font-weight: 100;
+    }
+
+    .font-2 {
+        font-family: 'Noto Sans JP', sans-serif !important;
+    }
+
+    .content-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    .product-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+
+
+    .product-card-box {
+        width: 313px;
+        overflow: hidden;
+    }
+    .product-card {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .img-container {
+        position: relative;
+    }
+
+    .img-container img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+        opacity: 0.8; /* Initially hidden */
+        /* transition: opacity 0.3s ease; */
+    }
+
+
+    .overlay-text {
+        position: absolute;
+        bottom: 0; /* Position at the bottom */
+        left: 50%; /* Position at the center horizontally */
+        transform: translateX(-50%); /* Adjust to center the text */
+        color: #fff; /* Adjust the text color */
+        padding: 10px; /* Adjust the padding as needed */
+        text-align: center;
+        font-size: 25px;
+        font-weight: 500;
+        padding: 10px; /* Add padding for better readability */
+    }
+    .overlay-back{
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0.1;
+    }
+    .img {
+        height: 441px;
+        overflow: hidden;
+    }
+
+    .img-product {
+        overflow: hidden;
+        position: relative;
+
+    }
+    /* Custom styles */
+    .has-megamenu:hover .megamenu {
+        display: block;
+    }
+    /* Remove the toggle button styles */
+    .has-megamenu .dropdown-toggle::after {
+        display: none;
+    }
+    .dropdown-menu.megamenu {
+        display: none;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        margin-top: 0; /* Optional: Adjust the margin based on your design */
+    }
+    .navbar .megamenu{ padding: 1rem; }
+
+    /* ============ desktop view ============ */
+    @media all and (min-width: 992px) {
+
+    .navbar .has-megamenu{position:static!important;}
+    .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+
+    }	
+    /* ============ desktop view .end// ============ */
+
+    /* ============ mobile view ============ */
+    @media(max-width: 991px){
+    .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+        overflow-y: auto;
+        max-height: 90vh;
+        margin-top:10px;
+    }
+    }
+    /* ============ mobile view .end// ============ */
+
+    /* Apply styling to the container */
+    .card-container {
+        position: relative;
+        width: 313px;
+        /* Set the width of the card */
+        height: auto;
+        /* Allow the height to adjust based on content */
+        overflow: hidden;
+        /* Ensure that any content overflowing the container is hidden */
+        cursor: pointer;
+        /* Change cursor to pointer on hover to indicate interactivity */
+
+    }
+
+
+    /* Apply styling to the images */
+    .card-container img {
+        width: 100%;
+        /* Make the image fill the entire width of the container */
+        border-radius: 37px;
+        height: auto;
+        /* Allow the height to adjust based on the width */
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        /* Add a smooth transition effect to the transform and opacity properties */
+    }
+    .card-container{
+        border-radius: 37px;
+    }
+    /* Additional styling for text content */
+    .text-content {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* Hide the second image initially */
+    .card-container img:nth-child(2) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transform: scale(0.8); /* Initial scale, adjust as needed */
+    }
+
+    /* Define the hover effect */
+    .card-container:hover img:first-child {
+        opacity: 0;
+        transform: scale(0.8); /* Scale down on hover, adjust as needed */
+    }
+
+    .card-container:hover img:nth-child(2) {
+        opacity: 1;
+        transform: scale(1.05); /* Scale up on hover, adjust as needed */
+    }
+
+
+
+    .add-to-cart {
+        position: absolute;
+        bottom: 0;
+        z-index: 990000;
+        left: 50%;
+        transform: translate(-50%);
+        transition: 1s;
+        display: none;
+        bottom: 14px;
+        transition: 1s;
+    }
+
+    .img-product:hover .add-to-cart {
+        display: block;
+    }
+
+    .img-product:hover img {
+        z-index: 1;
+    }
+
+    .img-product img {
+        /* transition: 1s; */
+        transition: transform 0.8s ease-in-out;
+    }
+
+    .text {
+        position: absolute;
+        bottom: 0;
+        z-index: 9999;
+    }
+
+    .video {
+        height: 100vh;
+        /* Set the height of the container to 100% of the viewport height */
+        overflow: hidden;
+        margin-bottom: 90px;
+    }
+
+    .video video {
+        width: 100%;
+        /* Make the image fill the entire width of the container */
+        height: 100%;
+        /* Make the image fill the entire height of the container */
+        object-fit: cover;
+    }
+
+    .banner-2-text {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
+    .img-container {
+        position: relative;
+        display: inline-block;
+    }
+
+
+
+    .product {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .media-text {
+        position: relative;
+    }
+
+    .category-img {
+        height: 410px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .category-img img {
+        position: absolute;
+        top: -327px;
+        left: -18px;
+    }
+
+    .drop-down {
+        display: none;
+    }
+
+    .drop a:hover .drop-down {
+        display: block;
+    }
+    .font-sz{
+        font-size: 18px;
+    }
+    .category-img {
+        position: relative;
+    }
+
+    .discreet-2 {
+        border: 1px solid #cedfdc;
+        /* border-top: none; */
+        text-align: center;
+        padding: 100px 0px;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        position: relative;
+        background: black;
+        transform: translate(-50%, -35%);
+        top: 35%;
+        left: 50%;
+    }
+
+    .img-div {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+    }
+
+    .circle-text a {
+        font-size: large;
+        font-weight: 500;
+        text-decoration: none;
+        color: #000;
+    }
+/* For screens smaller than 992px (tablet and below) */
+@media(max-width: 991px){
+    .sale-section .row {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+        align-items: center; /* Center align items */
+    }
+
+    .sale-section .col-md-7 {
+        width: 100%; /* Full width for the video column */
+        margin-bottom: 30px; /* Add some space between the video and text columns */
+    }
+
+    .sale-section .col-md-5 {
+        width: 100%; /* Full width for the text column */
+    }
+}
+
+/* For screens larger than 991px (desktop) */
+@media(min-width: 992px){
+    /* You can add specific styling for desktop view if needed */
+}
+.center-pro{
+    display: grid;
+    justify-content: center;
+}
 ::-webkit-scrollbar {
     display: none;
 }
@@ -78,7 +458,52 @@ body {
     width: 313px;
     overflow: hidden;
 }
+.product-card {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
 
+.img-container {
+    position: relative;
+}
+
+.img-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    opacity: 0.8; /* Initially hidden */
+    /* transition: opacity 0.3s ease; */
+}
+
+
+.overlay-text {
+    position: absolute;
+    bottom: 0; /* Position at the bottom */
+    left: 50%; /* Position at the center horizontally */
+    transform: translateX(-50%); /* Adjust to center the text */
+    color: #fff; /* Adjust the text color */
+    padding: 10px; /* Adjust the padding as needed */
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px; /* Add padding for better readability */
+}
+.overlay-back{
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.1;
+}
 .img {
     height: 441px;
     overflow: hidden;
@@ -89,12 +514,12 @@ body {
     position: relative;
 
 }
-  /* Custom styles */
-  .has-megamenu:hover .megamenu {
+/* Custom styles */
+.has-megamenu:hover .megamenu {
     display: block;
 }
- /* Remove the toggle button styles */
- .has-megamenu .dropdown-toggle::after {
+/* Remove the toggle button styles */
+.has-megamenu .dropdown-toggle::after {
     display: none;
 }
 .dropdown-menu.megamenu {
@@ -110,19 +535,19 @@ body {
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
 
-  .navbar .has-megamenu{position:static!important;}
-  .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+.navbar .has-megamenu{position:static!important;}
+.navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
 
 }	
 /* ============ desktop view .end// ============ */
 
 /* ============ mobile view ============ */
 @media(max-width: 991px){
-  .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+.navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
     overflow-y: auto;
-      max-height: 90vh;
-      margin-top:10px;
-  }
+    max-height: 90vh;
+    margin-top:10px;
+}
 }
 /* ============ mobile view .end// ============ */
 
@@ -239,18 +664,7 @@ body {
     display: inline-block;
 }
 
-.overlay-text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* background: rgba(0, 0, 0, 0.7); Adjust the background color and transparency */
-    color: #fff; /* Adjust the text color */
-    padding: 10px; /* Adjust the padding as needed */
-    text-align: center;
-    font-size: 25px;
-    font-weight: 500;
-}
+
 
 .product {
     display: flex;
@@ -318,4 +732,48 @@ body {
     font-weight: 500;
     text-decoration: none;
     color: #000;
+}
+/* For screens smaller than 992px (tablet and below) */
+@media(max-width: 991px){
+.sale-section .row {
+    flex-direction: column; /* Stack columns vertically on smaller screens */
+    align-items: center; /* Center align items */
+}
+
+.sale-section .col-md-7 {
+    width: 100%; /* Full width for the video column */
+    margin-bottom: 30px; /* Add some space between the video and text columns */
+}
+
+.sale-section .col-md-5 {
+    width: 100%; /* Full width for the text column */
+}
+}
+
+/* For screens larger than 991px (desktop) */
+@media(min-width: 992px){
+/* You can add specific styling for desktop view if needed */
+}
+.center-pro{
+display: grid;
+justify-content: center;
+}
+.sale-bg{
+    background-color: #f1e7dc;
+}
+
+@media (max-width: 1300px){
+.col-md-3 {
+    flex: 0 0 auto;
+    width: 50% !important;}
+}
+@media (max-width: 768px){
+.col-md-3 {
+    flex: 0 0 auto;
+    width: 100% !important;}
+}
+@media (max-width: 991px){
+    .sale-bg{
+        padding: 100px 0 !important;
+    }
 }
