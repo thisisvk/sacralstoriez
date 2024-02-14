@@ -733,6 +733,10 @@ body {
     text-decoration: none;
     color: #000;
 }
+.sale-bg{
+    background-color: #f1e7dc;
+}
+
 /* For screens smaller than 992px (tablet and below) */
 @media(max-width: 991px){
 .sale-section .row {
@@ -758,11 +762,9 @@ body {
 display: grid;
 justify-content: center;
 }
-.sale-bg{
-    background-color: #f1e7dc;
-}
 
-@media (max-width: 1300px){
+
+@media (max-width: 1367px){
 .col-md-3 {
     flex: 0 0 auto;
     width: 50% !important;}
@@ -772,8 +774,21 @@ justify-content: center;
     flex: 0 0 auto;
     width: 100% !important;}
 }
-@media (max-width: 991px){
+@media (max-width: 992px){
     .sale-bg{
         padding: 100px 0 !important;
+    }
+    .img-width{
+        max-width: 200% !important;
+        height: 200% !important;
+    }
+}
+@media (max-width: 436px){
+    .mia-sec{
+        margin-bottom: 175px !important;
+    margin-top: 180px !important;
+    }
+    .mia-sec-2{
+        flex-direction: column-reverse !important;
     }
 }
