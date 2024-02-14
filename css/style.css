@@ -3,7 +3,7 @@
     }
 
     body {
-        overflow-x: hidden;
+        overflow-x: hidden !important;
     }
 
     /* .navigation-bar {
@@ -790,5 +790,26 @@ justify-content: center;
     }
     .mia-sec-2{
         flex-direction: column-reverse !important;
+    }
+    .height-mia{
+       height: 450px !important;
+    }
+    body{
+        overflow-x: hidden !important;
+    }
+}
+@media (min-width: 436px){
+    .mia-sec{
+        margin-bottom: 175px !important;
+    margin-top: 180px !important;
+    }
+    .mia-sec-2{
+        flex-direction: column-reverse !important;
+    }
+    .height-mia{
+       height: 450px !important;
+    }
+    body{
+        overflow-x: hidden !important;
     }
 }
