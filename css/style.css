@@ -2,7 +2,7 @@
         display: none;
     }
 
-    body {
+    html {
         overflow-x: hidden !important;
     }
 
@@ -802,9 +802,6 @@ justify-content: center;
     .mia-sec{
         margin-bottom: 175px !important;
     margin-top: 180px !important;
-    }
-    .mia-sec-2{
-        flex-direction: column-reverse !important;
     }
     .height-mia{
        height: 450px !important;
