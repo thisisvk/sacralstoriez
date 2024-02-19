@@ -174,7 +174,7 @@
     /* Apply styling to the container */
     .card-container {
         position: relative;
-        width: 313px;
+        width: 260px !important;
         /* Set the width of the card */
         height: auto;
         /* Allow the height to adjust based on content */
@@ -304,7 +304,7 @@
 
     .category-img img {
         position: absolute;
-        top: -327px;
+        top: -209px !important;
         left: -18px;
     }
 
@@ -378,19 +378,7 @@
     display: grid;
     justify-content: center;
 }
-::-webkit-scrollbar {
-    display: none;
-}
 
-body {
-    overflow-x: hidden;
-}
-
-/* .navigation-bar {
-    position: relative;
-    z-index: 99;
-
-} */
 .font-sz1{
     font-size: 44px;
 }
@@ -798,6 +786,40 @@ justify-content: center;
         overflow-x: hidden !important;
     }
 }
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media (min-width: 768px) {
+    .for-large {
+        display: block;
+    }
+    .for-phone {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .for-large {
+        display: none;
+    }
+    .for-phone {
+        display: block;
+    }
+}
+
 @media (min-width: 436px){
     .mia-sec{
         margin-bottom: 175px !important;
@@ -808,5 +830,26 @@ justify-content: center;
     }
     body{
         overflow-x: hidden !important;
+    }
+}
+
+
+/* For big and laptop screens */
+@media screen and (min-width: 1300px) {
+    .ourCollection-section-bigscreen {
+        display: block ;
+    }
+    .ourCollection-section-smallscreens{
+        display: none;
+    }
+}
+
+/* For tablet, big tablet, and phone screens */
+@media screen and (min-width: 1024px) {
+    .ourCollection-section-smallscreens {
+        display: block;
+    }
+    .ourCollection-section-bigscreen {
+        display: none;
     }
 }

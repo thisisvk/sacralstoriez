@@ -57,17 +57,8 @@
                             </div> <!-- dropdown-mega-menu.// -->
                         </li>
                         <li class="nav-item dropdown has-megamenu">
-                            <a class="nav-link dropdown-toggle text-light small font-1" href="#"
-                                data-bs-toggle="dropdown" style="    font-size: smaller;"> About </a>
-                            <!-- <div class="dropdown-menu megamenu" role="menu" style="background: none; border: none;">
-                                <div class="container bg-light">
-                                    This is content of megamenu. <br>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat.
-                                </div>
-                            </div> dropdown-mega-menu.// -->
+                            <a class="nav-link text-light small font-1" href="about.html"
+                             style="    font-size: smaller;"> About </a>
                         </li>
                         <!-- <li class="nav-item dropdown has-megamenu">
                             <a class="nav-link dropdown-toggle text-light small font-1" href="#"
@@ -88,22 +79,25 @@
                         </li>
 
                     </ul>
-                    
-                    <a class="navbar-brand font-1" href="#" style="    letter-spacing: 1px;
+
+                    <a class="navbar-brand font-1" href="index.html" style="letter-spacing: 1px;
                         line-height: 19px;
                         margin-top: 11px;
                         margin-bottom: 11px;color: #fff; font-weight: 600;">Sacral <br> <span class="ms-5 font-1"
                             style="font-weight: 600;">Storiez</span></a>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link text-light small font-1" style="    font-size: smaller;" href="#"><i class="fas fa-search font-sz"></i></a>
+                            <a class="nav-link text-light small font-1" style="    font-size: smaller;" href="#"><i
+                                    class="fas fa-search font-sz"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light small font-1" style="    font-size: smaller;" href="#"><i class="far fa-user font-sz"></i></a>
+                            <a class="nav-link text-light small font-1" style="    font-size: smaller;" href="#"><i
+                                    class="far fa-user font-sz"></i></a>
                         </li>
-                        
+
                         <li class="nav-item">
-                            <a class="nav-link text-light small font-1" style="    font-size: smaller;" href="#"><i class="fas fa-shopping-cart font-sz"></i></a>
+                            <a class="nav-link text-light small font-1" style="    font-size: smaller;" href="#"><i
+                                    class="fas fa-shopping-cart font-sz"></i></a>
                         </li>
 
                     </ul>
@@ -114,14 +108,27 @@
     </section>
     <section class="banner-section">
         <div class="video">
-            <video playsinline="playsinline" autoplay="autoplay" muted="muted" preload="metadata" class="d-block w-100">
-                <source src="img/media/model.mp4" type="video/mp4"></video>
+            <div class="video-container">
+                <div class="for-large w-100">
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" preload="metadata" class="video-large">
+                        <source src="img/media/model.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="for-phone w-100">
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" preload="metadata" class="video-phone">
+                        <source src="img/media/phone.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            
+
 
 
             <div class="container d-flex align-items-center justify-content-center content-text">
                 <div class="row">
                     <div class="col-md-12 mt-4" style="    text-align: center;">
-                        <p style="font-size: 3rem; font-weight: 500;margin-top: -11px;" class="font-1 text-light">VARIETY
+                        <p style="font-size: 3rem; font-weight: 500;margin-top: -11px;" class="font-1 text-light">
+                            VARIETY
                             FOR
                             ALL NEEDS</p>
 
@@ -146,66 +153,77 @@
                         style="font-size: x-small;border-radius: 0%;letter-spacing: 2px;">VIEW ALL</button>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3 center-pro">
-                    <div class="card-container">
-                        <div class="image">
-                            <img src="img/product-img/3.jpg" class="product-img" alt="Product Image 1">
-                            <img src="img/product-img/2.jpg" alt="Product Image 2">
+            <div class="container">
+                <div class="card__container swiper" style="max-width: 100% !important;">
+                    <div class="card__content" style="margin-inline: 0 !important ;
+                    border-radius: 0 !important;">
+                        <div class="swiper-wrapper">
+                            <div class="col-md-3 center-pro">
+                                <div class="card-container">
+                                    <div class="image">
+                                        <img src="img/product-img/3.jpg" class="product-img" alt="Product Image 1">
+                                        <img src="img/product-img/2.jpg" alt="Product Image 2">
+                                    </div>
+                                </div>
+                                <div class="text-content">
+                                    <p>Product Name</p>
+                                    <p>$29.99</p>
+                                </div>
+                                <div class="btn btn-outline-dark font-2 pt-3 pb-3 pe-5 ps-5 w-100"
+                                    style="font-size: x-small;border-radius: 0%;letter-spacing: 2px;">ADD TO CART</div>
+                            </div>
+                            <div class="col-md-3 center-pro">
+                                <div class="card-container">
+                                    <div class="image">
+                                        <img src="img/product-img/23.jpg" class="product-img" alt="Product Image 1">
+                                        <img src="img/product-img/21.jpg" alt="Product Image 2">
+                                    </div>
+                                </div>
+                                <div class="text-content">
+                                    <p>Product Name</p>
+                                    <p>$29.99</p>
+                                </div>
+                                <div class="btn btn-outline-dark font-2 pt-3 pb-3 pe-5 ps-5 w-100"
+                                    style="font-size: x-small;border-radius: 0%;letter-spacing: 2px;">ADD TO CART</div>
+                            </div>
+                            <div class="col-md-3 center-pro">
+                                <div class="card-container">
+                                    <div class="image">
+                                        <img src="img/product-img/20.jpg" class="product-img" alt="Product Image 1">
+                                        <img src="img/product-img/17.jpg" alt="Product Image 2">
+                                    </div>
+                                </div>
+                                <div class="text-content">
+                                    <p>Product Name</p>
+                                    <p>$29.99</p>
+                                </div>
+                                <div class="btn btn-outline-dark font-2 pt-3 pb-3 pe-5 ps-5 w-100"
+                                    style="font-size: x-small;border-radius: 0%;letter-spacing: 2px;">ADD TO CART</div>
+                            </div>
+                            <div class="col-md-3 center-pro">
+                                <div class="card-container">
+                                    <div class="image">
+                                        <img src="img/product-img/39.jpg" class="product-img" alt="Product Image 1">
+                                        <img src="img/product-img/38.jpg" alt="Product Image 2">
+                                    </div>
+                                </div>
+                                <div class="text-content">
+                                    <p>Product Name</p>
+                                    <p>$29.99</p>
+                                </div>
+                                <div class="btn btn-outline-dark font-2 pt-3 pb-3 pe-5 ps-5 w-100"
+                                    style="font-size: x-small;border-radius: 0%;letter-spacing: 2px;">ADD TO CART</div>
+                            </div>
+        
                         </div>
                     </div>
-                    <div class="text-content">
-                        <p>Product Name</p>
-                        <p>$29.99</p>
-                    </div>
-                    <div class="btn btn-outline-dark font-2 pt-3 pb-3 pe-5 ps-5 w-100"
-                        style="font-size: x-small;border-radius: 0%;letter-spacing: 2px;">ADD TO CART</div>
                 </div>
-                <div class="col-md-3 center-pro">
-                    <div class="card-container">
-                        <img src="img/product-img/39.jpg" class="product-img" alt="Product Image 1">
-                        <img src="img/product-img/12.jpg" alt="Product Image 2">
-
-                    </div>
-                    <div class="text-content">
-                        <p>Product Name</p>
-                        <p>$29.99</p>
-
-                    </div>
-                    <div class="btn btn-outline-dark font-2 pt-3 pb-3 pe-5 ps-5 w-100"
-                        style="font-size: x-small;border-radius: 0%;letter-spacing: 2px;">ADD TO CART</div>
-                </div>
-                <div class="col-md-3 center-pro">
-                    <div class="card-container">
-                        <img src="img/product-img/20.jpg" class="product-img" alt="Product Image 1">
-                        <img src="img/product-img/17.jpg" alt="Product Image 2">
-                    </div>
-                    <div class="text-content">
-                        <p>Product Name</p>
-                        <p>$29.99</p>
-                    </div>
-                    <div class="btn btn-outline-dark font-2 pt-3 pb-3 pe-5 ps-5 w-100"
-                        style="font-size: x-small;border-radius: 0%;letter-spacing: 2px;">ADD TO CART</div>
-                </div>
-                <div class="col-md-3 center-pro">
-                    <div class="card-container">
-                        <img src="img/product-img/23.jpg" class="product-img" alt="Product Image 1">
-                        <img src="img/product-img/21.jpg" alt="Product Image 2">
-                    </div>
-                    <div class="text-content">
-                        <p>Product Name</p>
-                        <p>$29.99</p>
-                    </div>
-                    <div class="btn btn-outline-dark font-2 pt-3 pb-3 pe-5 ps-5 w-100"
-                        style="font-size: x-small;border-radius: 0%;letter-spacing: 2px;">ADD TO CART</div>
-                </div>
-
             </div>
         </div>
     </section>
     <section class="banner2-section">
         <div class="banner-2">
-            <div style="position: relative;height: 380px;overflow: hidden; margin-top: 8rem;background: url(img/1.jpg);background-repeat: no-repeat;background-size: cover;"
+            <div style="position: relative;height: 380px;overflow: hidden; margin-top: 8rem;background: url(img/12.png);background-repeat: no-repeat;background-size: cover;"
                 class="banner-2-img d-block">
                 <div class="overlay-back">
 
@@ -217,7 +235,7 @@
                             word-spacing: 1px; 
         ">LUXURY PRODUCTS CREATED WITH CARE</p>
                             <p style="font-size: 2.5rem; font-weight: 500;margin-top: -11px;" class="font-1 text-dark">
-                            SACRAL STORIEZ</p>
+                                SACRAL STORIEZ</p>
                             <div class="btn btn-outline-dark font-2 pt-3 pb-3 pe-5 ps-5"
                                 style="font-size: x-small;border-radius: 0%;letter-spacing: 2px;">EXPLORE NOW
                             </div>
@@ -229,48 +247,41 @@
         </div>
 
     </section>
-    <section class="ourCollection-section">
-        <div class="container" style="margin-top: 6.5rem;">
-            <div class="row">
-                <div class="col-md-10">
-                    <p class="font-1" style="font-size: xx-large;
-              letter-spacing: 2px;
-              font-weight: 500;"> What Are You Looking For?</p>
-                </div>
-                <div class="col-md-2">
-                    <button class="btn btn-outline-dark font-2 pt-3 pb-3 pe-5 ps-5"
-                        style="font-size: x-small;border-radius: 0%;letter-spacing: 2px;">EXPLORE ALL</button>
-                </div>
-            </div>
-            <div class="product-box mt-3">
-                <div class="product-card">
-                    <div class="img-container">
-                        <img src="img/card-img/1.jpg" class="" alt="">
-                        <div class="overlay"></div>
-                        <div class="overlay-text font-1">For Her</div>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <div class="img-container">
-                        <img src="img/card-img/3.jpg" class="" alt="">
-                        <div class="overlay"></div>
-                        <div class="overlay-text font-1">For Him</div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="img-container">
-                        <img src="img/card-img/2.jpg" class="" alt="">
-                        <div class="overlay"></div>
-                        <div class="overlay-text font-1">For Couple</div>
+    <section class="ourCollection-section-smallscreens">
+        <div class="container productCategory-section-smallscreens">
+            <div class="card__container swiper" style="max-width: 100% !important;">
+                <div class="card__content" style="margin-inline: 0 !important ;
+                border-radius: 0 !important;">
+                    <div class="swiper-wrapper">
+                        <div class="product-card swiper-slide mragin-right-none">
+                            <div class="img-container">
+                                <img src="img/card-img/1.jpg" class="" alt="">
+                                <div class="overlay"></div>
+                                <div class="overlay-text font-1">For Her</div>
+                            </div>
+                        </div>
+                        <div class="product-card swiper-slide mragin-right-none">
+                            <div class="img-container">
+                                <img src="img/card-img/3.jpg" class="" alt="">
+                                <div class="overlay"></div>
+                                <div class="overlay-text font-1">For Him</div>
+                            </div>
+                        </div>
+                        <div class="product-card swiper-slide mragin-right-none">
+                            <div class="img-container">
+                                <img src="img/card-img/2.jpg" class="" alt="">
+                                <div class="overlay"></div>
+                                <div class="overlay-text font-1">For Couple</div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            
         </div>
     </section>
     <section class="sale-section">
-        <div class="row " style="margin-top: 90px;background-color: #f1e7dc;">
+        <div class="row " style="margin-top: 50px;background-color: #f1e7dc;">
             <div class="col-md-7">
                 <!-- <img src="img/Untitled design (1).png" alt="">
                  -->
@@ -307,7 +318,7 @@
                         <div style="text-align: center;">
 
                             <p style="font-size: 2.5rem; font-weight: 500;margin-top: -11px;" class="font-1 text-dark">
-                                SACRAL 
+                                SACRAL
                                 STORIEZ</p>
                             <p class="font-1 text-dark mb-5" style="font-size: small;
                              letter-spacing: 2px; line-height: 30px;
@@ -323,7 +334,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="category-img">
-                        <img src="img/2.webp" class="img-width" alt="">
+                        <img src="img/first.png" class="img-width" alt="">
                     </div>
                 </div>
             </div>
@@ -332,7 +343,7 @@
             <div class="row mia-sec-2">
                 <div class="col-md-6">
                     <div class="category-img">
-                        <img src="img/3.webp" class="img-width" alt="">
+                        <img src="img/second.png" class="img-width" alt="">
                     </div>
                 </div>
                 <div class="col-md-6 mia-sec" style="position: relative;">
@@ -364,13 +375,13 @@
     <section class="miaMalkova-section">
         <div style="margin-top: 90px;display: flex;flex-wrap: wrap;">
             <div class="row" style="background-color: #f5ebdf;">
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <video playsinline="playsinline" autoplay="autoplay" muted="muted" preload="metadata"
-                        class="d-block w-100">
+                        class="d-block w-100" height="100%">
                         <source src="img/media/model-2.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="col-md-4 media-text d-flex align-items-center justify-content-center height-mia">
+                <div class="col-md-6 media-text d-flex align-items-center justify-content-center height-mia">
                     <div class="row" style="top: 50%;
                         left: 50%;
                         transform: translate(-50%, -50%);
@@ -585,10 +596,12 @@
             </div>
             <div class="col-md-2">
                 <h6 class="font-1">Connect</h6>
-             <i class="fa-brands fa-facebook"></i>
-             <i class="fa-brands fa-instagram ms-3"></i>
-             <i class="fa-brands fa-twitter ms-3"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram ms-3"></i>
+                <i class="fa-brands fa-twitter ms-3"></i>
             </div>
+
+
             <div class="col-md-4">
                 <div><img src="logo.png" alt="" style="    width: 200px;
                     margin-bottom: 31px;"></div>
@@ -613,10 +626,15 @@
         </div>
     </div>
 
+    
+   
+
+
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        
+
     </script>
     <script src="https://kit.fontawesome.com/48b7890c28.js" crossorigin="anonymous"></script>
     <!--=============== SWIPER JS ===============-->
