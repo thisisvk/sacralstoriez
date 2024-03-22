@@ -11,32 +11,10 @@
         z-index: 99;
 
     } */
-    .font-sz1 {
-        font-size: 44px;
-    }
 
-    .navbar.scrolled {
-        /* margin-top: -22px; */
-        background-color: #fff !important;
-        /* Change to your desired background color */
-        /* color: #fff; */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        /* Optional: Add a subtle box shadow */
-        transition: 0.2s;
-    }
-
-    .navbar.scrolled .nav-link,
-    .navbar.scrolled .navbar-brand {
-        color: #000 !important;
-        /* Change to your desired text color */
-    }
 
     .sac {
         line-height: 20px;
-    }
-
-    .back-text {
-        background-color: #f5ebdf;
     }
 
     .upper-head {
@@ -46,49 +24,11 @@
         background: #f5ebdf;
     }
 
-    .upper-head p {
-        font-size: xx-small;
-    }
-
-    .font-1 {
-        font-family: 'Cinzel', serif !important;
-        font-weight: 100;
-    }
 
     .font-2 {
         font-family: 'Noto Sans JP', sans-serif !important;
     }
 
-    .content-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-
-    .product-box {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-
-
-
-    .product-card-box {
-        width: 313px;
-        overflow: hidden;
-    }
-
-    .product-card {
-        position: relative;
-        display: inline-block;
-        overflow: hidden;
-    }
-
-    .img-container {
-        position: relative;
-    }
 
     .img-container img {
         display: block;
@@ -445,9 +385,6 @@
         /* Change to your desired text color */
     }
 
-    .sac {
-        line-height: 20px;
-    }
 
     .back-text {
         background-color: #f5ebdf;
@@ -468,11 +405,6 @@
         font-family: 'Cinzel', serif !important;
         font-weight: 100;
     }
-
-    .font-2 {
-        font-family: 'Noto Sans JP', sans-serif !important;
-    }
-
     .content-text {
         position: absolute;
         top: 50%;
